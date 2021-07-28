@@ -1,0 +1,49 @@
+{
+  "version": "0.0.0",
+  "license": "ISC",
+  "scripts": {
+    "dev": "vite",
+    "devf": "vite --force",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "test:Md": "vite -h"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "highlightjs-cypher": "^1.1.1",
+    "markdown-it": "^12.1.0",
+    "markdown-it-highlightjs": "^3.5.0",
+    "vue": "^3.0.5",
+    "vue-router": "4",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/highlightjs": "^9.12.2",
+    "@types/markdown-it": "^12.0.3",
+    "@types/node": "^16.4.4",
+    "@vitejs/plugin-vue": "^1.2.4",
+    "@vue/compiler-sfc": "^3.0.5",
+    "autoprefixer": "9.8.6",
+    "mockjs": "^1.1.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "svg-sprite-loader": "^6.0.9",
+    "typescript": "^4.3.2",
+    "vite": "^2.4.0",
+    "vue-tsc": "^0.0.24"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "Android 4.1",
+          "iOS 7.1",
+          "Chrome > 31",
+          "ff > 31",
+          "ie >= 8",
+          "last 10 versions"
+        ],
+        "grid": true
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.Markdown {
+	text-align: justify;
+    margin: auto;
+    font-size: 16px;
+}
+
+.Markdown h1,
+.Markdown  h2,
+.Markdown h3,
+.Markdown h4,
+.Markdown h5,
+.Markdown h6 {
+	color: #111;
+	font-family: 'TeXGyreAdventor', "Century Gothic", 'Yu Gothic', 'Ubuntu', "STHeiti", sans-serif;
+}
+
+
+.Markdown h1{
+	font-weight: normal;
+	line-height: 4rem;
+	margin: 0 0 1.75rem;
+	padding: 20px 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 4rem;
+}
+.Markdown h2 {
+	font-weight: normal;
+	line-height: 3rem;
+	margin: 0 0 1.9375rem;
+	padding: 0 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 3rem
+}
+
+.Markdown>h1:first-child {
+	margin-top: 2.75rem;
+}
+.Markdown>h2:first-child {
+	margin-top: 1.75rem;
+}
+.Markdown>h3:first-child {
+	margin-top: 1rem;
+}
+.Markdown>h4:first-child {
+	margin-top: 0.5rem;
+}
+
+
+.Markdown h1 {
+    font-size: 32px;
+    font-weight: 900;
+}
+.Markdown h2,.Markdown h3 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.Markdown h4,.Markdown h5, .Markdown h6 {
+    font-size: 20px;
+}
+
+.Markdown blockquote {
+    margin: 6.18vh 0;
+    border-left: 3px solid var(--assist-color);
+    text-indent: 2em;
+    font-size: 22px;
+}
+.Markdown ul {
+    list-style: square;
+    padding-left: 1.2em;
+}
+
+.Markdown ul li {
+    list-style: disc;
+    padding-left: 1.2em;
+}
+
+.Markdown ol {
+    padding-left: 1.2em;
+}
+.Markdown ol li {
+    list-style: simp-chinese-formal !important;
+}
+
+.Markdown .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 6.18vw 6.18vh;
+    width: 61.8vw;
+    color: var(--main-color);
+    background: var(--back-color, #fff);
+    border-radius: 26px;
+    box-shadow: var(--shadow-1-right);
+}
+
+
+.Markdown p code {
+    color: var(--assist-color);
+}
+
+.Markdown p code {
+    color: var(--assist-color);
+}
+
+
+.Markdown a {
+	color: #990000;
+	text-decoration: none;
+}
+.Markdown:hover {
+	text-decoration: underline;
+}
+
+.Markdown table {
+	margin-bottom: 20px
+}
+
+.Markdown table th,
+table td {
+	padding: 8px;
+	line-height: 1.25rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+
+.Markdown table th {
+	font-weight: bold
+}
+
+.Markdown table thead th {
+	vertical-align: bottom
+}

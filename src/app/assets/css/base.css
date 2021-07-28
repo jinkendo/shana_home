@@ -1,0 +1,74 @@
+@import url(reset.css);
+@import url(animate.css);
+
+body{
+    /* // 剑锋紫 */
+    --font-color: #131124;
+    /* // 云风白 */
+    --fontLight-color: #d8e3e7;
+    /* //背景色 雪白 */
+    --back-color: #fffef9;
+    /* //配色 满天星紫 */
+    --assist-color: #2e317c;
+    /* //品牌色 鹿角棕 */
+    --brand-color: #e3bd8d;
+    /* //主色 暗蓝紫 */
+    --main-color: #1f2040;
+    background: var(--back-color, #fff);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    color: var(--font-color);
+    /* 隐藏滚动条，ie不兼容 */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    /* //阴影 */
+    --shadow-light: 0px 6px 6px #00000038;
+    
+    --shadow-1-up: 0 -1px 2px -2px rgba(0, 0, 0, 0.16), 0 -3px 6px 0px rgba(0, 0, 0, 0.12), 0 -5px 12px 4px rgba(0, 0, 0, 0.09);
+    --shadow-1-down: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0px rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+    --shadow-1-left: -1px 0 2px -2px rgba(0, 0, 0, 0.16), -3px 0 6px 0px rgba(0, 0, 0, 0.12), -5px 0 12px 4px rgba(0, 0, 0, 0.09);
+    --shadow-1-right: 1px 0 2px -2px rgba(0, 0, 0, 0.16), 3px 0 6px 0px rgba(0, 0, 0, 0.12), -5px 0 12px 4px rgba(0, 0, 0, 0.09);
+    --shadow-2-up: 0 -3px 6px -4px rgba(0, 0, 0, 0.12), 0 -6px 16px 0 rgba(0, 0, 0, 0.08), 0 -9px 28px 8px rgba(0, 0, 0, 0.05);
+    --shadow-2-down: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    --shadow-2-left: -3px 0 6px -4px rgba(0, 0, 0, 0.12), -6px 0 16px 0 rgba(0, 0, 0, 0.08), -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+    --shadow-2-right: 3px 0 6px -4px rgba(0, 0, 0, 0.12), 6px 0 16px 0 rgba(0, 0, 0, 0.08), 9px 0 28px 8px rgba(0, 0, 0, 0.05);
+    --shadow-3-up: 0 -6px 16px -8px rgba(0, 0, 0, 0.08), 0 -9px 28px 0 rgba(0, 0, 0, 0.05), 0 -12px 48px 16px rgba(0, 0, 0, 0.03);
+    --shadow-3-down: 0 6px 16px -8px rgba(0, 0, 0, 0.08), 0 9px 28px 0 rgba(0, 0, 0, 0.05), 0 12px 48px 16px rgba(0, 0, 0, 0.03);
+    --shadow-3-left: -6px 0 16px -8px rgba(0, 0, 0, 0.08), -9px 0 28px 0 rgba(0, 0, 0, 0.05), -12px 0 48px 16px rgba(0, 0, 0, 0.03);
+    --shadow-3-right: 6px 0 16px -8px rgba(0, 0, 0, 0.08), 9px 0 28px 0 rgba(0, 0, 0, 0.05), 12px 0 48px 0px rgba(0, 0, 0, 0.03);
+
+    /* //大小 */
+    --xs: 210px;
+    --s: 640px;
+    --m: 960px;
+    --l: 1200px;
+    --xl: 1600px;
+    --xxl: 2400px;
+}
+
+
+/* Filter */
+.Filter {
+    position:relative;
+}
+.Filter::after {
+    content: "";
+    display: block;
+    background-color: var(--assist-color);
+    opacity: 0.06;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+}
+
+.Filter:hover:after{
+    background-color: transparent;
+    opacity: 0;
+}
+
+/* color: #2e317c; */
+/* background: #c4d7d6; */
+/* color: #e3bd8d  */
+

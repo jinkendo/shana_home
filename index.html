@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/ubnelement.svg" />
+    <link rel="stylesheet" type="text/css" href="/webfont/css/webfont.min.css" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>未知元素</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script type="module" src="/src/app/main.ts"></script> -->
+    <script type="module" >
+      import app from '/src/app/main.ts' 
+
+
+      console.log(app.VERSION)
+      if(app.MODE === 'development') {
+        //有网络延迟，导致拦截没有生效。这样写就可以避免了
+       import('/src/mock/index.js').then( ()=>{
+        app.Init() 
+       })
+      }else{
+        app.Init() 
+      }
+    </script>
+
+  </body>
+</html>

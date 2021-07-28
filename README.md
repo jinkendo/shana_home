@@ -19,6 +19,9 @@ PS： 缺少美感覺，stop一下。  从mac切换到arch，这么感觉这个�
 个人缺少财力，先接一些外包订单。 
 回头在搞这个，明天写后台
 
+不停止也没有办法，vite的ssr渲染BUG太多。 我后悔冒险尝试了
+
 ![截图](./public/index.png)
 
+### 下载
 git clone git@github.com:jinkendo/shana_home.git
